@@ -68,59 +68,61 @@ a {
 
 /* Global variables */
 :root {
-  --base-font-color: #565656;
-  --menu-font-color: #aaaaaa;
-  --contrast-font-color: #ffffff;
-  --section-title-font-color: #2c82c9;
-  --primary: #00aacc
+  --background-color: #fff;
+}
+
+/* Body styles */
+body {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 400;
 }
 
 /* Header */
 .header{
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.header__inner-top{
-  padding: 45px 45px 45px 45px;
-}
-
-.header__title{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgb(255, 200, 200);
+}
+
+.header__title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Song Myung', serif;
-  padding: 15px 20px;
-  font-weight: 400;
-  font-style: normal;
   font-size: 26px;
-  letter-spacing: .075em;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: #111;
+  font-weight: 500;
 }
 
-.header__hero{
-  display: block;
-  width: 98%;
-  height: 300px;
-  margin: 0px auto;
+.header__menu-button {
+  padding: 3px;
+  font-size: 20px;
 }
 
-.header__menu-list {
-  display: flex;
-  justify-content: space-around;
-  font-family: 'Noto Serif KR', serif;
-  align-items: center;
-  text-align: center;
+.header__close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 3px;
+  font-size: 20px;
 }
 
-.header__menu-item{
-  padding: .618em 0;
-  color: rgba(8,8,8,.56);
-  margin: 0 4em;
-  font-weight: 600;
-  font-size: 9.75px;
-  letter-spacing: .2em;
-  text-transform: uppercase;
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%); /*  x축방향 너비를 기준으로 -방향으로 이동시킨다. */
+  transition: transform 0.2s;
+  background-color: #fff;
 }
 
+.header__nav.active {
+  transform: translateX(0);
+}

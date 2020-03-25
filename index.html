@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAROM's PORTFOLIO</title>
   <link rel="stylesheet" href="style.css">
-  <title>PORTFOLIO</title>
+  <script src="https://kit.fontawesome.com/dfbd54160d.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="root">
     <header class="header">
-      <div class="header__inner-top">
-        <h1><a href="#" class="header__title">DAROM KIM</a></h1>
-        <nav class="header__nav">
-          <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="#">PORTFOLIO</a></li>
-            <li class="header__menu-item"><a href="#">ABOUT</a></li>
-            <li class="header__menu-item"><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-      <img src="./hero.jpg" alt="header image" class="header__hero">
+        <h1 class="header__title"><a href="/">DAROM KIM</a></h1>
+        <button id="menu-button" class="header__menu-button" type="button">
+          <i class="fas fa-bars 7x"></i>
+        </button>
+      <nav id="nav" class="header__nav">
+        <button id="close-button" class="header__close-button" type="button">
+          <i class="fas fa-times 7x"></i>
+        </button>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a href="/portfolio">PORTFOLIO</a></li>
+          <li class="header__menu-item"><a href="/about">ABOUT</a></li>
+          <li class="header__menu-item"><a href="/contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    <!-- <img src="./hero.jpg" alt="header image" class="header__hero"> -->
     </header>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
