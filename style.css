@@ -152,19 +152,23 @@ a {
 
 /* Main */
 .main {
-  padding: 0 13px;
-  /* background: rgb(255, 199, 199); */
+  position: relative;
+  top: 57px;
+  /* padding: 13px; */
+  border: 10px solid #fff; /* padding 대신 border 사용 */
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .main__hero {
   width: 100%;
-  max-height: 230px;
+  max-height: 200px;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px){
   .root {
-    padding: 13px;
+    border: 10px solid #fff
   }
   
   .header {
@@ -210,12 +214,13 @@ a {
 
   /* Main */
   .main {
-    padding: 0;
+    top: 208px;
+    border: 0px;
   }
 
   .main__hero {
     width: 100%;
-    max-height: 550px;
+    max-height: 350px;
   }
 
 }
