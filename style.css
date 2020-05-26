@@ -179,6 +179,41 @@ body {
   background: #fefefe url('images/hero.jpeg') center / auto 768px no-repeat;
 }
 
+.main__introduction{
+  padding-top: 128px;
+}
+
+.introduction__title{
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.introduction__paragraph{
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 128px;
+}
+
+.introduction__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.introduction__item-title{
+ order: 1; 
+}
+
+.introduction__item img {
+  /* padding: 17px; */
+  width: 100%;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px){
@@ -233,6 +268,10 @@ body {
     background-size: 960px auto;
   }
 
+  .introduction__title {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
 }
 
 /* Desktop */
@@ -240,5 +279,9 @@ body {
   .main__hero {
     height: 368px;
     background-size: cover;
+  }
+
+  .main__introduction{
+    padding-top: 116px;
   }
 }
